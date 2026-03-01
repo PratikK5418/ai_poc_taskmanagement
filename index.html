@@ -27,7 +27,7 @@
 <script>
 // ── Password Config ──────────────────────────────────────────
 // Change this password to whatever you want:
-var _APP_PASSWORD = 'lseg2024';
+var _APP_PASSWORD = 'aipoc1234';
 
 function _authCheck() {
   var pw = document.getElementById('auth-pw').value;
@@ -113,7 +113,8 @@ if (sessionStorage.getItem('lseg_auth') === '1') {
   <div class="modal-footer"><button class="btn btn-default" onclick="closeModal('ingest-overlay')">Cancel</button><button class="btn btn-ai" onclick="ingestAndCreate(true)">&#9889; Ingest + AI Auto-Assign</button><button class="btn btn-primary" onclick="ingestAndCreate(false)">Ingest &amp; Create Task</button></div>
 </div></div>
 <div class="overlay" id="analyst-overlay"><div class="modal" style="max-width:560px;" id="analyst-modal-body"></div></div>
-<div class="overlay" id="ai-overlay"><div class="modal" style="max-width:780px;" id="ai-modal-body"></div></div>
+<div class="overlay" id="ai-overlay"><div class="modal" style="max-width:960px;" id="ai-modal-body"></div></div>
+<div class="overlay" id="guardrail-overlay"><div class="modal" style="max-width:520px;" id="guardrail-modal-body"></div></div>
 <div class="overlay" id="config-overlay"><div class="modal" style="max-width:560px;">
   <div class="modal-header"><div><div class="modal-title">AI Assignment Settings</div></div><div class="modal-close" onclick="closeModal('config-overlay')">&#10005;</div></div>
   <div class="modal-body" style="max-height:70vh;overflow-y:auto;">
